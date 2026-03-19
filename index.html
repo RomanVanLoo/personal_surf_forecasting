@@ -43,6 +43,7 @@
   .session-rating { display: flex; align-items: center; gap: 4px; } .rating-num { font-size: 1.1rem; font-weight: 800; line-height: 1; } .rating-label { font-size: 0.65rem; color: var(--text-dim); }
   .session-spot { font-size: 1.05rem; font-weight: 700; color: var(--text-bright); margin-bottom: 2px; } .session-drive { font-size: 0.75rem; color: var(--text-dim); margin-bottom: 8px; }
   .session-why, .backup-spots { font-size: 0.85rem; color: var(--text); line-height: 1.55; margin-top: 10px; }
+  .observation-signal { font-size: 0.78rem; color: #bfdbfe; background: #0f2747; border: 1px solid #1d4ed8; border-radius: 8px; padding: 8px 10px; margin-top: 10px; line-height: 1.45; }
   .conditions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
   .cond-item { background: var(--bg); border-radius: 8px; padding: 8px 10px; text-align: center; }
   .cond-label { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
@@ -73,7 +74,7 @@
   </div>
 
   <div class="status-bar">
-    <span class="updated">Updated: Thu 19 Mar, 11:31 am</span>
+    <span class="updated">Updated: Thu 19 Mar, 8:40 pm</span>
     <span class="chrome-status"><span class="status-dot ok"></span>Chrome connected</span>
   </div>
 
@@ -81,35 +82,35 @@
 
   <div class="overview">
     <h2>The Big Picture</h2>
-    <p>The next three days start manageable for shared surfs, then steadily tip toward more energy and more Roman-only temptation. The best pattern is still early sessions first, sheltered options for Cato, and saving ambition for the punchier windows once the pulse really shows.</p>
+    <p>The useful shift here is not just “bigger is better.” The best pattern is shared, lower-stress dawn sessions first, then a deliberate Roman-only re-check once the size and wind picture clarifies. On borderline days, cameras matter because they tell you whether a drive buys actual walls or just more lump and crowd.</p>
   </div>
 
   <div class="day-tabs">
     <div class="day-tab active" onclick="showDay(0)">
       <div class="day-name">Fri</div>
       <div class="day-date">20 Mar</div>
-      <div class="day-rating">Best: <span class="rate-4">4/10</span></div>
+      <div class="day-rating">Best: <span class="rate-5">5/10</span></div>
     </div>
 
     <div class="day-tab " onclick="showDay(1)">
       <div class="day-name">Sat</div>
       <div class="day-date">21 Mar</div>
-      <div class="day-rating">Best: <span class="rate-4">4/10</span></div>
+      <div class="day-rating">Best: <span class="rate-5">5/10</span></div>
     </div>
 
     <div class="day-tab " onclick="showDay(2)">
       <div class="day-name">Sun</div>
       <div class="day-date">22 Mar</div>
-      <div class="day-rating">Best: <span class="rate-5">5/10</span></div>
+      <div class="day-rating">Best: <span class="rate-6">6/10</span></div>
     </div></div>
   
   <div class="day-content active" id="day0">
     <div class="day-overview-card">
       <div class="day-overview-title">Fri 20 Mar</div>
-      <div class="day-overview-text">This is a lower-drama day. Surf early, take the easy win, and do not force extra sessions once the wind starts wobbling.</div>
+      <div class="day-overview-text">A tidy dawn-first day: good for a shared surf if you stay realistic.</div>
     </div>
     
-    <div class="session-card rate-border-4">
+    <div class="session-card rate-border-5">
       <div class="session-header">
         <div>
           <div class="session-time">Dawn — 5:30am - 8:00am</div>
@@ -117,328 +118,337 @@
           <div class="session-drive">25 min drive</div>
         </div>
         <div class="session-rating">
-          <span class="rating-num rate-4">4</span>
+          <span class="rating-num rate-5">5</span>
           <span class="rating-label">/10</span>
         </div>
       </div>
-      <div class="session-why">Best shared option: manageable size, lower stress paddle-out, and enough shape for a proper session together.</div>
+      <div class="session-why">Best shared opening move: Cabarita Beach balances manageable size, lower paddle stress, and enough shape that Roman still gets a real surf.</div>
       <div class="conditions">
         <div class="cond-item">
           <div class="cond-label">Surf</div>
-          <div class="cond-value">0.5-1.4m</div>
-          <div class="cond-detail">mixed E swell</div>
+          <div class="cond-value">0.8-1.3m</div>
+          <div class="cond-detail">small E + S windswell mix</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
+          <div class="cond-value">watch the incoming tide</div>
+          <div class="cond-detail">some exposed options may swamp out quickly</div>
         </div>
       </div>
-      <div class="gf-tag yes">Good shared session if the lineup stays mellow.</div>
-      <div class="backup-spots"><strong>Backups:</strong> Kingscliff, Palm Beach</div>
+      <div class="gf-tag maybe">Shared only if the paddle-out still looks easy from the beach.</div>
+      
+      <div class="backup-spots"><strong>Backups:</strong> Currumbin Alley, Wategos Beach, Casuarina Beach</div>
     </div>
 
-    <div class="session-card rate-border-4">
+    <div class="session-card rate-border-5">
       <div class="session-header">
         <div>
           <div class="session-time">Mid-morning — 8:30am - 11:30am</div>
-          <div class="session-spot">Duranbah (D-Bah)</div>
+          <div class="session-spot">The Spit</div>
           <div class="session-drive">Walkable</div>
         </div>
         <div class="session-rating">
-          <span class="rating-num rate-4">4</span>
+          <span class="rating-num rate-5">5</span>
           <span class="rating-label">/10</span>
         </div>
       </div>
-      <div class="session-why">Worth a look if you want a touch more push than the shared option without driving forever.</div>
+      <div class="session-why">This is the decision window for a Roman-only mission: more reward than dawn, but only if the cam or beach check confirms shape rather than just raw size.</div>
       <div class="conditions">
         <div class="cond-item">
           <div class="cond-label">Surf</div>
-          <div class="cond-value">0.5-1.4m</div>
-          <div class="cond-detail">mixed E swell</div>
+          <div class="cond-value">0.6-1.4m</div>
+          <div class="cond-detail">small E + S windswell mix</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
+          <div class="cond-value">watch the incoming tide</div>
+          <div class="cond-detail">some exposed options may swamp out quickly</div>
         </div>
       </div>
       <div class="gf-tag no">Roman-only call.</div>
-      <div class="backup-spots"><strong>Backups:</strong> Cabarita Beach</div>
+      
+      <div class="backup-spots"><strong>Backups:</strong> Cabarita Beach, Casuarina Beach, Salt Beach</div>
     </div>
 
-    <div class="session-card rate-border-4">
+    <div class="session-card rate-border-5">
       <div class="session-header">
         <div>
           <div class="session-time">Afternoon — 2:00pm - 5:30pm</div>
-          <div class="session-spot">Cabarita Beach</div>
-          <div class="session-drive">25 min drive</div>
+          <div class="session-spot">Currumbin Alley</div>
+          <div class="session-drive">10 min drive</div>
         </div>
         <div class="session-rating">
-          <span class="rating-num rate-4">4</span>
+          <span class="rating-num rate-5">5</span>
           <span class="rating-label">/10</span>
         </div>
       </div>
-      <div class="session-why">Usually less special than dawn. Only go again if the wind stays weirdly kind or you are walking to the beach anyway.</div>
+      <div class="session-why">Afternoon is mostly for a convenience surf or a sheltered cleanup, not the headline session.</div>
       <div class="conditions">
         <div class="cond-item">
           <div class="cond-label">Surf</div>
-          <div class="cond-value">0.5-1.4m</div>
-          <div class="cond-detail">mixed E swell</div>
+          <div class="cond-value">0.4-1.0m</div>
+          <div class="cond-detail">small E + S windswell mix</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
+          <div class="cond-value">watch the incoming tide</div>
+          <div class="cond-detail">some exposed options may swamp out quickly</div>
         </div>
       </div>
-      <div class="gf-tag yes">Good shared session if the lineup stays mellow.</div>
+      <div class="gf-tag yes">Good shared call for both of you.</div>
       
+      <div class="backup-spots"><strong>Backups:</strong> Wategos Beach, Casuarina Beach, Kingscliff</div>
     </div>
     <div class="advice-card">
       <h3>Best advice for Fri</h3>
-      <p>Surf for convenience and fun, not because the forecast demands a mission.</p>
+      <p>Decision shape: split-plan likely. Prioritize the best early window, and use cams to avoid low-value drives.</p>
     </div>
   </div>
 
   <div class="day-content " id="day1">
     <div class="day-overview-card">
       <div class="day-overview-title">Sat 21 Mar</div>
-      <div class="day-overview-text">This is a lower-drama day. Surf early, take the easy win, and do not force extra sessions once the wind starts wobbling.</div>
+      <div class="day-overview-text">A tidy dawn-first day: good for a shared surf if you stay realistic.</div>
     </div>
     
-    <div class="session-card rate-border-4">
-      <div class="session-header">
-        <div>
-          <div class="session-time">Dawn — 5:30am - 8:00am</div>
-          <div class="session-spot">Currumbin Alley</div>
-          <div class="session-drive">10 min drive</div>
-        </div>
-        <div class="session-rating">
-          <span class="rating-num rate-4">4</span>
-          <span class="rating-label">/10</span>
-        </div>
-      </div>
-      <div class="session-why">Best shared option: manageable size, lower stress paddle-out, and enough shape for a proper session together.</div>
-      <div class="conditions">
-        <div class="cond-item">
-          <div class="cond-label">Surf</div>
-          <div class="cond-value">0.6-1.0m</div>
-          <div class="cond-detail">mixed E swell</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
-        </div>
-      </div>
-      <div class="gf-tag yes">Good shared session if the lineup stays mellow.</div>
-      <div class="backup-spots"><strong>Backups:</strong> Kingscliff, Palm Beach</div>
-    </div>
-
-    <div class="session-card rate-border-4">
-      <div class="session-header">
-        <div>
-          <div class="session-time">Mid-morning — 8:30am - 11:30am</div>
-          <div class="session-spot">Cabarita Beach</div>
-          <div class="session-drive">25 min drive</div>
-        </div>
-        <div class="session-rating">
-          <span class="rating-num rate-4">4</span>
-          <span class="rating-label">/10</span>
-        </div>
-      </div>
-      <div class="session-why">Worth a look if you want a touch more push than the shared option without driving forever.</div>
-      <div class="conditions">
-        <div class="cond-item">
-          <div class="cond-label">Surf</div>
-          <div class="cond-value">0.6-1.0m</div>
-          <div class="cond-detail">mixed E swell</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
-        </div>
-      </div>
-      <div class="gf-tag yes">Good shared session if the lineup stays mellow.</div>
-      <div class="backup-spots"><strong>Backups:</strong> Currumbin Alley</div>
-    </div>
-
-    <div class="session-card rate-border-4">
-      <div class="session-header">
-        <div>
-          <div class="session-time">Afternoon — 2:00pm - 5:30pm</div>
-          <div class="session-spot">Currumbin Alley</div>
-          <div class="session-drive">10 min drive</div>
-        </div>
-        <div class="session-rating">
-          <span class="rating-num rate-4">4</span>
-          <span class="rating-label">/10</span>
-        </div>
-      </div>
-      <div class="session-why">Usually less special than dawn. Only go again if the wind stays weirdly kind or you are walking to the beach anyway.</div>
-      <div class="conditions">
-        <div class="cond-item">
-          <div class="cond-label">Surf</div>
-          <div class="cond-value">0.6-1.0m</div>
-          <div class="cond-detail">mixed E swell</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
-        </div>
-      </div>
-      <div class="gf-tag yes">Good shared session if the lineup stays mellow.</div>
-      
-    </div>
-    <div class="advice-card">
-      <h3>Best advice for Sat</h3>
-      <p>Surf for convenience and fun, not because the forecast demands a mission.</p>
-    </div>
-  </div>
-
-  <div class="day-content " id="day2">
-    <div class="day-overview-card">
-      <div class="day-overview-title">Sun 22 Mar</div>
-      <div class="day-overview-text">Energy is building and the trip starts tipping from easy shared surfs toward more serious Roman windows. Dawn shelter matters.</div>
-    </div>
-    
-    <div class="session-card rate-border-5">
-      <div class="session-header">
-        <div>
-          <div class="session-time">Dawn — 5:30am - 8:00am</div>
-          <div class="session-spot">Cabarita Beach</div>
-          <div class="session-drive">25 min drive</div>
-        </div>
-        <div class="session-rating">
-          <span class="rating-num rate-5">5</span>
-          <span class="rating-label">/10</span>
-        </div>
-      </div>
-      <div class="session-why">Best shared option: manageable size, lower stress paddle-out, and enough shape for a proper session together.</div>
-      <div class="conditions">
-        <div class="cond-item">
-          <div class="cond-label">Surf</div>
-          <div class="cond-value">0.3-1.0m</div>
-          <div class="cond-detail">building E pulse</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
-        </div>
-        <div class="cond-item">
-          <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
-        </div>
-      </div>
-      <div class="gf-tag yes">Good shared session if the lineup stays mellow.</div>
-      <div class="backup-spots"><strong>Backups:</strong> Kingscliff, Palm Beach</div>
-    </div>
-
     <div class="session-card rate-border-6">
       <div class="session-header">
         <div>
-          <div class="session-time">Mid-morning — 8:30am - 11:30am</div>
-          <div class="session-spot">Duranbah (D-Bah)</div>
-          <div class="session-drive">Walkable</div>
+          <div class="session-time">Dawn — 5:30am - 8:00am</div>
+          <div class="session-spot">Casuarina Beach</div>
+          <div class="session-drive">35 min drive</div>
         </div>
         <div class="session-rating">
           <span class="rating-num rate-6">6</span>
           <span class="rating-label">/10</span>
         </div>
       </div>
-      <div class="session-why">Worth a look if you want a touch more push than the shared option without driving forever.</div>
+      <div class="session-why">Best shared opening move: Casuarina Beach balances manageable size, lower paddle stress, and enough shape that Roman still gets a real surf.</div>
       <div class="conditions">
         <div class="cond-item">
           <div class="cond-label">Surf</div>
-          <div class="cond-value">0.3-1.0m</div>
-          <div class="cond-detail">building E pulse</div>
+          <div class="cond-value">0.6-1.0m</div>
+          <div class="cond-detail">building ESE pulse</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
+          <div class="cond-value">mid / lower half preferred</div>
+          <div class="cond-detail">still worth checking the tide before paddling out</div>
+        </div>
+      </div>
+      <div class="gf-tag yes">Good shared call for both of you.</div>
+      
+      <div class="backup-spots"><strong>Backups:</strong> Salt Beach, Cabarita Beach, Hastings Point</div>
+    </div>
+
+    <div class="session-card rate-border-4">
+      <div class="session-header">
+        <div>
+          <div class="session-time">Mid-morning — 8:30am - 11:30am</div>
+          <div class="session-spot">The Spit</div>
+          <div class="session-drive">Walkable</div>
+        </div>
+        <div class="session-rating">
+          <span class="rating-num rate-4">4</span>
+          <span class="rating-label">/10</span>
+        </div>
+      </div>
+      <div class="session-why">This is the decision window for a Roman-only mission: more reward than dawn, but only if the cam or beach check confirms shape rather than just raw size.</div>
+      <div class="conditions">
+        <div class="cond-item">
+          <div class="cond-label">Surf</div>
+          <div class="cond-value">0.5-0.9m</div>
+          <div class="cond-detail">building ESE pulse</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Wind</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Tide</div>
+          <div class="cond-value">mid / lower half preferred</div>
+          <div class="cond-detail">still worth checking the tide before paddling out</div>
         </div>
       </div>
       <div class="gf-tag no">Roman-only call.</div>
-      <div class="backup-spots"><strong>Backups:</strong> Cabarita Beach</div>
+      
+      <div class="backup-spots"><strong>Backups:</strong> Skennars Head, Casuarina Beach, Salt Beach</div>
     </div>
 
     <div class="session-card rate-border-5">
       <div class="session-header">
         <div>
           <div class="session-time">Afternoon — 2:00pm - 5:30pm</div>
-          <div class="session-spot">Cabarita Beach</div>
-          <div class="session-drive">25 min drive</div>
+          <div class="session-spot">Wategos Beach</div>
+          <div class="session-drive">70 min drive</div>
         </div>
         <div class="session-rating">
           <span class="rating-num rate-5">5</span>
           <span class="rating-label">/10</span>
         </div>
       </div>
-      <div class="session-why">Usually more size than quality by this point. Good for a check-surf or if the pulse is clearly on, but dawn still sets the tone.</div>
+      <div class="session-why">Afternoon is mostly for a convenience surf or a sheltered cleanup, not the headline session.</div>
+      <div class="conditions">
+        <div class="cond-item">
+          <div class="cond-label">Surf</div>
+          <div class="cond-value">0.4-0.7m</div>
+          <div class="cond-detail">building ESE pulse</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Wind</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Tide</div>
+          <div class="cond-value">mid / lower half preferred</div>
+          <div class="cond-detail">still worth checking the tide before paddling out</div>
+        </div>
+      </div>
+      <div class="gf-tag yes">Good shared call for both of you.</div>
+      
+      <div class="backup-spots"><strong>Backups:</strong> Cabarita Beach, Hastings Point, Fingal Head</div>
+    </div>
+    <div class="advice-card">
+      <h3>Best advice for Sat</h3>
+      <p>Decision shape: split-plan likely. Prioritize the best early window, and use cams to avoid low-value drives.</p>
+    </div>
+  </div>
+
+  <div class="day-content " id="day2">
+    <div class="day-overview-card">
+      <div class="day-overview-title">Sun 22 Mar</div>
+      <div class="day-overview-text">Energy is rising: easy shared dawn, then a more conditional Roman-only decision later.</div>
+    </div>
+    
+    <div class="session-card rate-border-6">
+      <div class="session-header">
+        <div>
+          <div class="session-time">Dawn — 5:30am - 8:00am</div>
+          <div class="session-spot">Casuarina Beach</div>
+          <div class="session-drive">35 min drive</div>
+        </div>
+        <div class="session-rating">
+          <span class="rating-num rate-6">6</span>
+          <span class="rating-label">/10</span>
+        </div>
+      </div>
+      <div class="session-why">Best shared opening move: Casuarina Beach balances manageable size, lower paddle stress, and enough shape that Roman still gets a real surf.</div>
       <div class="conditions">
         <div class="cond-item">
           <div class="cond-label">Surf</div>
           <div class="cond-value">0.3-1.0m</div>
-          <div class="cond-detail">building E pulse</div>
+          <div class="cond-detail">building ESE pulse</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Wind</div>
-          <div class="cond-value">light offshore</div>
-          <div class="cond-detail">clean</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
         </div>
         <div class="cond-item">
           <div class="cond-label">Tide</div>
-          <div class="cond-value">best on the lower half</div>
-          <div class="cond-detail">check the actual tide before paddling out</div>
+          <div class="cond-value">mid / lower half preferred</div>
+          <div class="cond-detail">still worth checking the tide before paddling out</div>
         </div>
       </div>
-      <div class="gf-tag yes">Good shared session if the lineup stays mellow.</div>
+      <div class="gf-tag yes">Good shared call for both of you.</div>
       
+      <div class="backup-spots"><strong>Backups:</strong> Salt Beach, Cabarita Beach, Hastings Point</div>
+    </div>
+
+    <div class="session-card rate-border-6">
+      <div class="session-header">
+        <div>
+          <div class="session-time">Mid-morning — 8:30am - 11:30am</div>
+          <div class="session-spot">Palm Beach</div>
+          <div class="session-drive">15 min drive</div>
+        </div>
+        <div class="session-rating">
+          <span class="rating-num rate-6">6</span>
+          <span class="rating-label">/10</span>
+        </div>
+      </div>
+      <div class="session-why">Still surfable together if it stays soft, but this window is more about Roman getting a little more push without overcommitting.</div>
+      <div class="conditions">
+        <div class="cond-item">
+          <div class="cond-label">Surf</div>
+          <div class="cond-value">0.6-1.3m</div>
+          <div class="cond-detail">building ESE pulse</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Wind</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Tide</div>
+          <div class="cond-value">mid / lower half preferred</div>
+          <div class="cond-detail">still worth checking the tide before paddling out</div>
+        </div>
+      </div>
+      <div class="gf-tag maybe">Shared only if the paddle-out still looks easy from the beach.</div>
+      
+      <div class="backup-spots"><strong>Backups:</strong> The Spit, Burleigh Heads, Lennox Head Point</div>
+    </div>
+
+    <div class="session-card rate-border-5">
+      <div class="session-header">
+        <div>
+          <div class="session-time">Afternoon — 2:00pm - 5:30pm</div>
+          <div class="session-spot">Currumbin Alley</div>
+          <div class="session-drive">10 min drive</div>
+        </div>
+        <div class="session-rating">
+          <span class="rating-num rate-5">5</span>
+          <span class="rating-label">/10</span>
+        </div>
+      </div>
+      <div class="session-why">Afternoon is mostly for a convenience surf or a sheltered cleanup, not the headline session.</div>
+      <div class="conditions">
+        <div class="cond-item">
+          <div class="cond-label">Surf</div>
+          <div class="cond-value">0.4-1.0m</div>
+          <div class="cond-detail">building ESE pulse</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Wind</div>
+          <div class="cond-value">light offshore early</div>
+          <div class="cond-detail">best early before the wind shift</div>
+        </div>
+        <div class="cond-item">
+          <div class="cond-label">Tide</div>
+          <div class="cond-value">mid / lower half preferred</div>
+          <div class="cond-detail">still worth checking the tide before paddling out</div>
+        </div>
+      </div>
+      <div class="gf-tag yes">Good shared call for both of you.</div>
+      
+      <div class="backup-spots"><strong>Backups:</strong> Cabarita Beach, Hastings Point, Fingal Head</div>
     </div>
     <div class="advice-card">
       <h3>Best advice for Sun</h3>
-      <p>Aim early, keep the shared session conservative, and be ready to split plans once the pulse gets real.</p>
+      <p>Decision shape: start shared if dawn looks soft, then reassess. Confidence is fairly solid because the bigger pulse still needs confirmation.</p>
     </div>
   </div>
 
@@ -456,11 +466,15 @@
     <h2>Data Sources</h2>
     <div style="display:flex;flex-direction:column;gap:6px;font-size:0.82rem;">
       <div style="background:var(--card);border-radius:var(--radius);padding:12px 14px;">
-        <strong style="color:var(--text-bright);">Forecast workflow:</strong> Scrapling Surfline fetch -&gt; surf/forecast-cache.json -&gt; surf/report.json -&gt; rendered dashboard
+        <strong style="color:var(--text-bright);">Forecast workflow:</strong> Scrapling Surfline fetch -&gt; surf/forecast-cache.json -&gt; spot-scored synthesis -&gt; surf/report.json -&gt; rendered dashboard
       </div>
 
       <div style="background:var(--card);border-radius:var(--radius);padding:12px 14px;">
         <strong style="color:var(--text-bright);">Core regions:</strong> Gold Coast, Tweed Coast, Byron Bay, Ballina/Lennox
+      </div>
+
+      <div style="background:var(--card);border-radius:var(--radius);padding:12px 14px;">
+        <strong style="color:var(--text-bright);">Decision layer:</strong> Spot metadata now includes shelter / crowd / paddle stress / camera usefulness for better shared-vs-solo calls
       </div>
 
       <div style="background:var(--card);border-radius:var(--radius);padding:12px 14px;">
@@ -469,7 +483,7 @@
     </div>
   </div>
 
-  <div class="footer">Structured source-of-truth lives under surf/; index.html is rendered from report.json.<br>Forecaster: Hugh McDowell<br>Next update: Next automated refresh can safely rerun the same collect -&gt; synthesize -&gt; render pipeline.</div>
+  <div class="footer">Structured source-of-truth lives under surf/; index.html is rendered from report.json.<br>Forecaster: Hugh McDowell<br>Next update: Next refresh can rerun collect -&gt; synthesize -&gt; render. Big or uncertain windows should still use a sunrise cam check before committing to long drives.</div>
 </div>
 <script>
 function showDay(index) {
